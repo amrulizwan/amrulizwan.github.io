@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hubungi Kami</title>
 
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
@@ -94,6 +93,13 @@
         by <a class="text-white fw-bold" href="https://instagram.com/amrulizwan_">Amrul Izwan</a>
       </p>
     </footer>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js">
+      var viewMode = getCookie("view-mode");
+      if(viewMode == "desktop"){
+        viewport.setAttribute('content', 'width=1024');
+      }else if (viewMode == "mobile"){
+        viewport.setAttribute('content', 'width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no');
+      }
+    </script>
   </body>
 </html>
