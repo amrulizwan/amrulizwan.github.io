@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SMK Negeri 3 Selong</title>
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -84,7 +83,7 @@
             </div>
             <div class="card-body">
               <p class="card-text" style="text-align: left">
-                eknik elektro adalah bagian dari bidang teknik (engineering) yang mempelajari, mendesain dan mengaplikasikan komponen dan sistem yang memanfaatkan listrik (electricity), elektronika (electronics) dan electromagnetism.
+                Teknik elektro adalah bagian dari bidang teknik (engineering) yang mempelajari, mendesain dan mengaplikasikan komponen dan sistem yang memanfaatkan listrik (electricity), elektronika (electronics) dan electromagnetism.
               </p>
             </div>
           </div>
@@ -151,6 +150,13 @@
         by <a class="text-white fw-bold" href="https://instagram.com/amrulizwan_">Amrul Izwan</a>
       </p>
     </footer>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js">
+      var viewMode = getCookie("view-mode");
+      if(viewMode == "desktop"){
+        viewport.setAttribute('content', 'width=1024');
+      }else if (viewMode == "mobile"){
+        viewport.setAttribute('content', 'width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no');
+      }
+    </script>
   </body>
 </html>
