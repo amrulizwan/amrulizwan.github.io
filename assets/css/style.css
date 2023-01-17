@@ -60,3 +60,8 @@ a {
 h2 {
   color: white;
 }
+
+#gallery img:hover {
+  transform: scale(2);
+  transition: 0.5s;
+}
